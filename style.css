@@ -2,7 +2,7 @@ body {
     background: rgb(32, 45, 9);
     color: rgb(112, 98, 70);
     padding: 10px;
-    font-family: Verdana;
+    font-family: sans-serif;
 }
 #all-contents {
   max-width: 800px;
@@ -16,6 +16,7 @@ nav {
     margin-bottom: 20px;
     display: flex;
     padding: 10px;
+    border-radius: 10px;
 }
 h1 {
     display: flex;
@@ -40,13 +41,16 @@ a {
 main {
     background: rgb(231,216,200);
     display: flex;
+    border-radius: 10px;
+    padding-bottom: 40%;
 }
 .sidebar {
     margin-right: 25px;
     padding: 10px;
 }
 .sidebar-img {
-    width: 200px;
+    width: 225px;
+    border-radius: 10px;
 }
 .content {
     flex: 1;
