@@ -49,16 +49,16 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-    createPlatform(45,80,220,195)
+    createPlatform(55,105,185,175)
     createPlatform(650,300,200,185)
-    createPlatform(1000,620,200,225)
-    createPlatform(190,500,140,125)
+    createPlatform(1000,620,200,185)
+    createPlatform(190,500,140,135)
     createPlatform(1210,150,200,185)
    
-    createPlatform(320,220,100,85)
-    createPlatform(950,450,100,85)
-    createPlatform(770, 565, 100, 85)
-    createPlatform(1300, 575, 75, 65)
+    createPlatform(320,220, 95,90)
+    createPlatform(950,450, 95,90)
+    createPlatform(800, 560, 95, 90)
+    createPlatform(1300, 575, 65, 65)
 
 
     
@@ -82,7 +82,7 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
 
     createCannon("left", 550, 1550);
-    createCannon("right", 400, 1000);
+    createCannon("right", 400, 1050);
     createCannon("top", 600, 1000);
     createCannon("top", 1200, 900)
 
