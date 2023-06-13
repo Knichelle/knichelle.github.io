@@ -358,24 +358,24 @@ function projectileCollision() {
 }
 
 function deathOfPlayer() {
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "Black";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
     canvas.width / 2,
     canvas.height / 2
   );
-  ctx.fillStyle = "black";
-  ctx.font = "800% serif";
+  ctx.fillStyle = "gold";
+  ctx.font = "700% serif";
   ctx.fillText(
-    "You are dead",
+    "you died 🙁",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
   );
-  ctx.font = "500% serif";
+  ctx.font = "400% serif";
   ctx.fillText(
-    "Hit any key to restart",
+    "hit any key to restart",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 3,
     (canvas.width / 16) * 14
@@ -411,13 +411,10 @@ function playerFrictionAndGravity() {
 
 function drawPlatforms() {
   for (var i = 0; i < platforms.length; i++) {
-    ctx.fillStyle = "grey";
-    ctx.fillRect(
-      platforms[i].x,
+    ctx.drawImage(platformImage, platforms[i].x,
       platforms[i].y,
       platforms[i].width,
-      platforms[i].height
-    );
+      platforms[i].height);
   }
 }
 
@@ -523,7 +520,8 @@ function collectablesCollide() {
 
 function createPlatform(x, y, width, height) {
   platforms.push({ x, y, width, height });
-}
+  }
+
 
 function createCannon(
   wallLocation,

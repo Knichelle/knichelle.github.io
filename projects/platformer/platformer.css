@@ -3,7 +3,9 @@ body {
 }
 
 canvas {
-  background-color: lightgray;
+  background-image: url("https://w0.peakpx.com/wallpaper/454/553/HD-wallpaper-white-clouds-blue-sky-building-aetna-anime-background-anime-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 img {
