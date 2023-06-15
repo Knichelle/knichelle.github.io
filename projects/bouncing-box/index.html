@@ -35,7 +35,7 @@
 </head>
 <body class="board">
 	<!-- HTML for the box -->
-	<div class="box">?</div>
+	<div class="box">0</div>
 	<div class="score"> score: 0</div>
 	<div class="lives"> lives: 10</div>
 
@@ -69,8 +69,12 @@
 			// changes the text displayed on the Box
 			function changeBoxText(newText) {
 				box.text(newText);
-				score.text(newText);
-				lives.text(newText);
+				$(".score").text(`score: ${newText}`);
+			}
+
+			//function update the player's lives on the board
+			function updateLives(newText){
+				$(".lives").text(`lives : ${newText}`);
 			}
 
 
@@ -124,6 +128,7 @@
 
 			function boardClick(){
 				misClick -= 1;
+				updateLives(misClick);
 				if (misClick === 0){
 					endGame();
 				}
