@@ -25,7 +25,7 @@
 			color: black;
 			font-size: 200%;
 		}
-		.lives{
+		.trys{
 			color: black;
 			font-size: 200%;
 		}
@@ -37,7 +37,7 @@
 	<!-- HTML for the box -->
 	<div class="box">0</div>
 	<div class="score"> score: 0</div>
-	<div class="lives"> lives: 10</div>
+	<div class="trys"> trys: 10</div>
 
 	<script>
 		(function(){
@@ -72,9 +72,9 @@
 				$(".score").text(`score: ${newText}`);
 			}
 
-			//function update the player's lives on the board
-			function updateLives(newText){
-				$(".lives").text(`lives : ${newText}`);
+			//function update the player's trys on the board
+			function updateTrys(newText){
+				$(".trys").text(`trys: ${newText}`);
 			}
 
 
@@ -88,7 +88,7 @@
 			var positionX = 0;
 			var points = 0;
 			var speed = 8;
-			var misClick = 10;
+			var trys = 10;
 
 			
 			/* 
@@ -127,14 +127,14 @@
 			};
 
 			function boardClick(){
-				misClick -= 1;
-				updateLives(misClick);
-				if (misClick === 0){
+				trys -= 1;
+				updateTrys(trys);
+				if (trys === 0){
 					endGame();
 				}
 			}
 
-			// function to end game after 10 mis clicks 
+			// function to end game after 10 trys
 			function endGame(){
 				clearInterval(interval);
 			}
